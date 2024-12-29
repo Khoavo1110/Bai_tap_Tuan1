@@ -1,0 +1,73 @@
+.header{
+    position:relative;
+    width:548px;
+    height:150px;
+}
+.header::after{
+    position:absolute;
+    content:'';
+    bottom:-6px;
+    left:0;
+    width:100%;
+    height: .5px;
+    opacity: 1;
+    background: #000;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    border: 0;
+    margin-top:10px;
+}
+.section {
+    position:relative;
+}
+.section::after{
+    position:absolute;
+    content:'';
+    bottom:-6px;
+    left:0;
+    width:100%;
+    height: 0.5px;
+    opacity: 1;
+    background: #000;
+}
+.first a {
+text-decoration: none;
+margin-right: 10px;
+}
+.first a:not(:last-child)::after {
+    
+    content: " ♦"; /* Thêm ký tự ♦ sau mỗi thẻ trừ thẻ cuối */
+     margin-left:10px
+}
+.first{
+    position:relative;
+}
+.first::after{
+    position:absolute;
+    content:'';
+    bottom:-6px;
+    left:0;
+    width:100%;
+    height: 0.5px;
+    opacity: 1;
+    background: #000;
+}
+.mail{
+    display: block;
+    text-decoration: none;
+}
+.section{
+    position:relative;
+}
+.section::affter{
+    position:absolute;
+    content:'';
+    bottom:-6px;
+    left:0;
+    width:100%;
+    height: 0.5px;
+    opacity: 1;
+    background: #000;
+}

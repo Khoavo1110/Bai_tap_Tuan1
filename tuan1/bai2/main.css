@@ -1,0 +1,28 @@
+.header {
+    position: relative; /* Định vị phần tử cha */
+    display: inline-block; /* Giúp gắn chặt kích thước với ảnh */
+}
+
+.header::after {
+    content: ''; /* Tạo phần tử giả */
+    position: absolute; /* Định vị tuyệt đối so với `.header` */
+    bottom: -6px; /* Đặt đường gạch chân cách dưới ảnh 6px */
+    left: 0; /* Canh trái */
+    width: 100%; /* Chiều rộng bằng ảnh */
+    height: 2px; /* Độ dày của gạch chân */
+    background: #000; /* Màu sắc của gạch chân */
+}
+.section {
+    position: relative;
+
+}
+
+.section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
