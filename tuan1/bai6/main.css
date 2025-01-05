@@ -106,6 +106,7 @@
 .btn-53:hover span:nth-child(6) {
   transition-delay: 0.5s;
 }
+/*__________________________________________________________________*/
 .btn-53{
     margin:0 auto;
 }
@@ -113,6 +114,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom:10px;
 
 }
 
@@ -154,12 +156,21 @@ hr{
 .radio{
     margin-top:10px;
 }
-.foother {
-    display: flex;          /* Sử dụng flexbox để căn chỉnh */
-    justify-content: center;/* Căn giữa các nút theo chiều ngang */
-    align-items: center;    /* Căn giữa các nút theo chiều dọc */
-    gap: 10px;              /* Tùy chọn: Thêm khoảng cách giữa các nút */
+.foother  {
+display:flex;
+flex-direction: row;
+
   }
+.foother .final{
+    margin-left:30%;
+    margin-right:10px;
+}
 body{
     background-color: #010ef92b;
+}
+.tieude-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
 }

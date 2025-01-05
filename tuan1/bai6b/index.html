@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+             display:grid;
+             grid-template-columns:30% 1fr;
+             gap:10px;    
+        }
+        input{
+            width:80%;
+            height: 20px;
+        }
+        textarea{
+            width:50%;
+        }
+        .last{
+            display: grid;
+            grid-template-columns: 30% 1fr;
+        }
+        .news{
+            display: grid;
+            grid-template-columns: 5% 1fr;
+            gap:10px;
+            margin-top:10px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contas</h1>
+    </header>
+    <fieldset>
+        <legend>
+            your masseger
+        </legend>
+        <div class="form">
+            <label for="text">to: </label>
+            <input type="text" id="text" placeholder="example caffe">
+            <label for="youremail">youremail:</label>
+            <input type="email" id="youremail">
+            <label for="comment">message:</label>
+            <textarea name="message" id="comment" rows="3" cols="4"></textarea>
+        </div>
+        <p>Attach file <input type="file"></p>
+
+    </fieldset>
+    <fieldset>
+        <legend>How you found us</legend>
+        <div class="form">
+            <label for="found">How did you hear of us</label>
+            <select name="know" id="found">
+                <option value="google">google</option>
+                <option value="facebook">Facebook</option>
+                <option value="twiter">twiter</option>
+                
+            </select>
+        </div>
+            <div class="last">
+                <p>newsletter</p>
+              <div class="news">
+                <input type="checkbox" id="check">
+                <label for="check">ensure this box is checked is you would like to receive email update</label>
+              </div>
+            </div>
+    </fieldset>
+    
+    <input type="button" value="sendmessage" style="width:100px">
+  
+</div>
+</body>
+</html>
